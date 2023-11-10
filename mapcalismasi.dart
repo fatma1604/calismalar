@@ -1,17 +1,5 @@
 void main(List<String> args) {
-  // dönüşüm çalışması
-
-  // intacırı stringe çevir
-
-  int number = 42;
-  String metinSayi = number.toString();
-  print(metinSayi);
-  //42 bir metin
-  // öbürleri içinde bunu yapıcaz sadece
-  /*
-  to.ınt ve to.doble kulanıcam
-  runtimeType veri tipini gösteriri
-  */
+  
   //MAP ÇALIŞMASI
   //Map, birden fazla boyutu olan List'tir. Örnek:
   Map name = {1: "fatma", 2: "enes", 3: "ugur", 4: "hamide"};
@@ -44,21 +32,14 @@ void main(List<String> args) {
   };
   name.addAll(yeniIsimler);
   print("eski mapa yeni map eklemek"); //list ile aynı
-  print(name);
+  print(yeniIsimler);
   print("anahtar kontrolü");
-  print(name[1].containsKey("isim")); // anahtar içerip içermedini kontrol eder
+  print(yeniIsimler[1].containsKey("isim")); // anahtar içerip içermedini kontrol eder
   print("değer kontrolü");
-  print(name[1].containsValue("ugur"));
+  print(yeniIsimler[1].containsValue("ugur"));
 
-  //forEach kulanıcaz
-  /*
-  Map'in eleman sayısına göre döndü işlemi yapar. forEach fonksiyonu 2 parametre alır. 1. anahtar parametresi, 2. değer parametresidir.
 
-*/
-  name.forEach((anahtar, deger) {
-    print("foreach kulanımı");
-    print(anahtar.toString() + ". anahtarda : " + deger.toString());
-  });
+
 //naptını pek anlamamış olabilirim bakıcaz buna
   name.remove(2);
   print("belirtilen anahtarda ki değeri kaldırma");
@@ -71,4 +52,29 @@ void main(List<String> args) {
   //updateAll = Tüm değerleri günceller.
 
 //runtimeType = Çalışma zamanındaki veri tipini gösterir.
+
+/*
+  map için ufak bir açıklama daaha
+  Harita (Map): Bir harita, anahtar-değer çiftlerini saklamak için kullanılan bir veri yapısıdır.
+   Her bir anahtar bir değere eşlenir. Anahtarlar benzersiz olmalıdır, 
+  yani aynı anahtara sahip birden fazla öğe içeremezsiniz. Harita veri yapısı, 
+  anahtarları kullanarak hızlı bir şekilde belirli bir değeri bulmanızı veya değiştirmenizi sağlar.
+
+Veri Yapısı: Genel olarak, veri yapısı, belirli bir veri tipi veya organizasyonun verileri depolamak
+ ve işlemek için kullanılan bir yapısıdır. Veri yapıları, verileri belirli bir düzende veya yapılı bir biçimde
+  saklamak ve hızlı erişim veya işlemler için optimize etmek için kullanılır.
+  */
+  /*List name = ["fatma", "uğur", "iklim"];
+  print(name);
+  */
+  // liste oluşturma örneği yaptık yukardakini kulana bilcem gibi bide şöyle bir şey yapalım
+
+  /*List<String> name = ["fatma", "uğur", "iklim"];
+  print(name);*/
+
+  //Map bakalım
+
+  /*Map kisi = {"isim": "Kaan", "soyisim": "Kuşcu"};
+  print(kisi);*/
+
 }

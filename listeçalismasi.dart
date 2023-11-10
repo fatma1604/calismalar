@@ -1,44 +1,7 @@
 void main(List<String> args) {
-  /*
-  map için ufak bir açıklama daaha
-  Harita (Map): Bir harita, anahtar-değer çiftlerini saklamak için kullanılan bir veri yapısıdır.
-   Her bir anahtar bir değere eşlenir. Anahtarlar benzersiz olmalıdır, 
-  yani aynı anahtara sahip birden fazla öğe içeremezsiniz. Harita veri yapısı, 
-  anahtarları kullanarak hızlı bir şekilde belirli bir değeri bulmanızı veya değiştirmenizi sağlar.
+  
 
-Veri Yapısı: Genel olarak, veri yapısı, belirli bir veri tipi veya organizasyonun verileri depolamak
- ve işlemek için kullanılan bir yapısıdır. Veri yapıları, verileri belirli bir düzende veya yapılı bir biçimde
-  saklamak ve hızlı erişim veya işlemler için optimize etmek için kullanılır.
-  */
-  /*List name = ["fatma", "uğur", "iklim"];
-  print(name);
-  */
-  // liste oluşturma örneği yaptık yukardakini kulana bilcem gibi bide şöyle bir şey yapalım
 
-  /*List<String> name = ["fatma", "uğur", "iklim"];
-  print(name);*/
-
-  //Map bakalım
-
-  /*Map kisi = {"isim": "Kaan", "soyisim": "Kuşcu"};
-  print(kisi);*/
-
-  // liste kulandımız gibide kulana biliriz stringli
-
-  //dinamik ile var arasıdaki farkalara bakalım
-  dynamic number = 10.5;
-  number = 16;
-  number = "merhaba";
-  print("**var ve dinamik demesi***");
-  print(number);
-
-  var first = 15;
-  var first1 = "hello";
-
-  print(first);
-  print(first1);
-
-  //const varrr bunlarda değişmez pi sayısı gibi değtiremesin
 
   // listlerin ekleri
   List name = ["fatma", "uğur", "iklim", "dünya"];
