@@ -16,7 +16,7 @@ class Fatma extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            Text( 
               "Hoş geldin",
               style: TextStyle(
                   fontSize: 45,

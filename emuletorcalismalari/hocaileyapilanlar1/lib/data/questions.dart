@@ -1,6 +1,5 @@
 
-
-import 'package:hocaileyapilanlar1/data/models/questions_model.dart';
+import 'package:flutter_application_1/data/models/questions_model.dart';
 
 const questions = [
   QuestionModel(
