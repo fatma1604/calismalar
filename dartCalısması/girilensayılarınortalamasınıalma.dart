@@ -4,7 +4,7 @@ void main() {
   int count = 0;
   double total = 0;
   
-  stdout.write('Kaç adet sayının ortalamasını almak istiyorsunuz: ');
+  print('Kaç adet sayının ortalamasını almak istiyorsunuz: ');
   String? input = stdin.readLineSync();
   
   if (input != null) {
