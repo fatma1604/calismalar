@@ -12,8 +12,11 @@ class ExpenseItem extends StatelessWidget {
       child: Column(children: [Text(expenseList.name), 
       Row(children: [
 
-        Text("TL ${expenseList.price.toStringAsFixed(2)}"),
-        const Spacer(),//ortalama
+        Text("₺ ${expenseList.price.toStringAsFixed(2)}"),
+        const Spacer(),
+        //ortalama
+        Icon(CategoryIcon[expenseList.category]),
+        const SizedBox(),
         Text(DateFormat.yMEd().format(expenseList.date)) //todo format date
       ],)]),
     );
