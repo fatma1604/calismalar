@@ -11,11 +11,14 @@ void main(List<String> args) {
   print(" lütfen üçüncü kenarı giriniz:");
   String? kenar3 = stdin.readLineSync();
 
-  if ((kenarBir != kenar2 )&(kenarBir != kenar3) & (kenar2 != kenar3)) {
-    print("çeşit üçgen");
+  print("sonuc");
+  kenar();
+}
 
-  } 
-  else if ((kenarBir == kenar2 )&& (kenarBir == kenar3)) {
+void kenar({kenarBir, kenar2, kenar3}) {
+  if ((kenarBir != kenar2) & (kenarBir != kenar3) & (kenar2 != kenar3)) {
+    print("çeşit üçgen");
+  } else if ((kenarBir == kenar2) && (kenarBir == kenar3)) {
     print("Eşit Kenar");
   } else {
     print("ikiz üçgen");
