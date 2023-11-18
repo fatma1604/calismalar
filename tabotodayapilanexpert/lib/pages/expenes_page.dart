@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabotodayapilanexpert/models/expense.dart';
+import 'package:tabotodayapilanexpert/data/data.dart';
 import 'package:tabotodayapilanexpert/widgets/expense_item.dart';
-//fdtful hızlıcaa kod
 
 class ExpenesPage extends StatefulWidget {
   const ExpenesPage({Key? key}) : super(key: key);
@@ -11,19 +10,6 @@ class ExpenesPage extends StatefulWidget {
 }
 
 class _ExpenesPageState extends State<ExpenesPage> {
-  List<Expense> expenseList = [
-    Expense(
-        name: "makarna",
-        price: 80.55,
-        date: DateTime.now(),
-        category: Category.work),
-    Expense(
-        name: "pilav",
-        price: 70.77,
-        date: DateTime.now(),
-        category: Category.work),
-  ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,11 +20,19 @@ class _ExpenesPageState extends State<ExpenesPage> {
             Text("GRAFİK"),
             Expanded(
               child: ListView.builder(
-                  itemCount: expenseList.length,
-                  itemBuilder: (context, index) {
-                    return ExpenseItem(expenseList[index]);
-                  }),
-            )
+                itemCount: expenseList.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                          15.0), // Ayarlamak istediğiniz yuvarlaklık miktarı
+                    ),
+                    color: expenseList[index].color, // Kartın arka plan rengi
+                    child: ExpenseItem(expenseList[index]),
+                  );
+                },
+              ),
+            ),
           ],
         ),
       ),

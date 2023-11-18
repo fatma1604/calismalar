@@ -9,16 +9,22 @@ class ExpenseItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Column(children: [Text(expenseList.name), 
-      Row(children: [
-
-        Text("₺ ${expenseList.price.toStringAsFixed(2)}"),
-        const Spacer(),
-        //ortalama
-        Icon(CategoryIcon[expenseList.category]),
-        const SizedBox(),
-        Text(DateFormat.yMEd().format(expenseList.date)) //todo format date
-      ],)]),
+      child: Column(children: [
+        Text(expenseList.name),
+        Row(
+          children: [
+            Text(
+              "₺ ${expenseList.price.toStringAsFixed(2)}",
+              style: TextStyle(color: Color.fromARGB(255, 111, 3, 144)),
+            ),
+            const Spacer(),
+            //ortalama
+            Icon(CategoryIcon[expenseList.category]),
+            const SizedBox(),
+            Text(DateFormat.yMEd().format(expenseList.date)) //todo format date
+          ],
+        )
+      ]),
     );
   }
 }
