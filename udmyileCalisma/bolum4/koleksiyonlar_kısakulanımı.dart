@@ -1,13 +1,15 @@
 void main(List<String> args) {
-  var listem = <String>[];
-  var myMap = <String, dynamic>{'yas': 34};
-  var mySet = <String>{'emre', 'hasan'};
+  var listem = <String>[];//strin olan bir list 
+ 
+  var myMap = <String, dynamic>{'yas': 34};//mapler 2 şey vardır
+
+  var mySet = <String>{'emre', 'hasan'};//setlerde bir
 
   var tekSayilar = [1, 3, 5];
   var ciftSayilar = [2, 4, 6];
 
 //spreads operator
-  var sonListe = [...tekSayilar, ...ciftSayilar];
+  var sonListe = [...tekSayilar, ...ciftSayilar];//trk satırda liste ekleme
   /*  sonListe.addAll(tekSayilar);
   sonListe.addAll(ciftSayilar); */
 
@@ -24,6 +26,4 @@ void main(List<String> args) {
   print(sonListe);
   print(sonMap);
   print(sonSetYapisi);
-
-  
 }

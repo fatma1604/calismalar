@@ -7,27 +7,26 @@ import 'dart:collection';
  * 
  * Map yapısını sözlüğe benzetebiliriz. Tıpkı sözlük gibi birbirden farklı elemanları içerir.
  * Sabit uzunlukta değildir, dinamik uzunluğa sahiptir.
+ * []=> liste
+ * {}=> map
+ * 
  */
 
 main(List<String> args) {
   Map<String, int> alanKodlari = {"ankara": 312, "bursa": 224, "istanbul": 212};
 
-  print(alanKodlari);
-  print(alanKodlari["bursa"]);
+  print("bütün alan kodlarını yazdırma${alanKodlari}");
+  print("bursanın  alan kodunu yazdırma${alanKodlari["bursa"]}");
 
-  Map<String, dynamic> fatma = {
-    "soyad": "kamıs",
-    "yas": 21,
-    "bekarMi": true
-  };
+  Map<String, dynamic> fatma = {"soyad": "kamıs", "yas": 21, "bekarMi": true};
 
-  List sayilar = [0, 1, 2];
 
-  Map<String, dynamic> deneme = Map();
-  Map<String, dynamic> deneme2 = {};
+  
+  Map<String, dynamic> deneme = Map();//boş map yapısı
+  Map<String, dynamic> deneme2 = {};//boş map yapısı
 
   deneme2['yas'] = 55;
-  print(fatma['yas']);
+ 
 
   for (String oankiAnahtar in fatma.keys) {
     print(oankiAnahtar);
@@ -46,6 +45,5 @@ main(List<String> args) {
     print("Bulunan yaş değeri ${fatma['yas']}");
   }
 
-  
   print(fatma);
 }

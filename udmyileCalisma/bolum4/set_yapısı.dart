@@ -5,7 +5,7 @@ main(List<String> args) {
   isimler.add("ali");
   isimler.add("emre");
   isimler.add("emre");
-  isimler.add("fatma");
+  isimler.add("ayşe ");
   
   bool sonucum = isimler.remove("emre222");
   print("sonuc : " + sonucum.toString());
@@ -38,8 +38,8 @@ main(List<String> args) {
     print("no : $s1");
   }
 
-  numaralar.clear();
-  numaralar.addAll(ciftSayilar);
+  numaralar.clear();//var olanları silme
+  numaralar.addAll(ciftSayilar);//sete  ekleme
 
   for (int s1 in numaralar) {
     print("add alldan sonra no : $s1");
