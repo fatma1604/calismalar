@@ -13,6 +13,7 @@ void main(List<String> args) {
   ugur.aktifmi = false;
   ugur.bilgi();
   var iklim = Ogrenci();
+  iklim.bilgi();
   //şeklinde de tanımlana bilir
 }
 

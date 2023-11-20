@@ -1,15 +1,17 @@
 void main(List<String> args) {
   Ogrenci fatma = Ogrenci(2002, "fatma", false);
   fatma.ogreciBilgileri();
+  fatma.yasi();
 
   var ayse = Ogrenci.adiolmayanOgrenciKurucumetodu(2005, true);
   print("ayse bilgileri");
   ayse.ogreciBilgileri();
+  ayse.yasi();
 
-  print("enesin bilgileri ${Ogrenci.dogumyiliOlmayanKurucumetodu("enes", false)}");
+  print("enesin bilgileri ");
   var enes = Ogrenci.dogumyiliOlmayanKurucumetodu("enes", false);
-  print("dkdkkdkkd ${enes.ogreciBilgileri().toString()}")
   enes.ogreciBilgileri();
+  enes.yasi();
 }
 
 class Ogrenci {
@@ -23,22 +25,24 @@ class Ogrenci {
   Ogrenci.adiolmayanOgrenciKurucumetodu(this.dogumYili, this.haylaOgrencimi) {
     this.dogumYili = dogumYili;
     this.haylaOgrencimi = haylaOgrencimi;
+    print("isimi girilmeyen öreneci ");
   }
   Ogrenci.dogumyiliOlmayanKurucumetodu(this.adi, this.haylaOgrencimi) {
     this.adi = adi;
     this.haylaOgrencimi = haylaOgrencimi;
+    print("dogum yılı girilmeyen ögremci");
   }
 
   void ogreciBilgileri() {
     print(
-        "dogum yılı: ${dogumYili},adi: ${adi},hayla örencimi${haylaOgrencimi}");
+        "dogum yılı: ${dogumYili},adi: ${adi},hayla örencimi ${haylaOgrencimi}");
   }
 
   void yasi() {
     if (dogumYili == null) {
       print("yas bilgisi girilmedi");
     } else {
-      print("yasi${dogumYili}-2023");
+      print("yasi ${2023 - dogumYili!}");
     }
   }
 }

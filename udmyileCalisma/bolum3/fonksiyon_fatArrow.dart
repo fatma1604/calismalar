@@ -4,6 +4,7 @@ void main(List<String> args) {
   print("kısa metot kualnımı2 " + carpim(5, 6).toString());
   print("mak değeri uzun yolu" + buyukolaniBul(8, 9).toString());
   print("max değerin kısa yolu" + maxBul(20, 8).toString());
+  
 }
 
 int hacimHesapla(int en, int boy, int yukseklik) {
