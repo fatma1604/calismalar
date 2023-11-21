@@ -6,6 +6,8 @@ Nasıl Yapılır ?
   Bu işlem bittikten sonra bu sayıları tekrar etme sayısına göre bir listeye aktarınız.
   (60 eğer 4 kere çıktıysa listeye 60 sayısı 4 kere eklenmelidir. )
 */
+import 'dart:math';
+
 void main(List<String> args) {
   Map<int, int> elmanCounts = {};
 
@@ -14,7 +16,7 @@ void main(List<String> args) {
       String elmanString = "elman$j";
 
       if (elmanCounts.containsKey(j)) {
-        elmanCounts[j] += 1; // Increment the count by 1
+        elmanCounts[j] = elmanCounts[j]+1; // Increment the count by 1
       } else {
         elmanCounts[j] = 1;
       }
@@ -34,7 +36,7 @@ void main(List<String> args) {
 
   // 1 ile 60 arasındaki sayıları 1.000.000 kez oluştur
   for (int i = 0; i < 1000000; i++) {
-    int sayi = Random().nextInt(60) + 1;
+    int sayi =Random().nextInt(60) + 1;
 
     // Oluşturulan sayıları map'te sakla
     sayiSayilari.update(sayi, (value) => value + 1, ifAbsent: () => 1);
