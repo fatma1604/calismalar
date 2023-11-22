@@ -8,6 +8,7 @@ void main(List<String> args) {
   SadeceOkuyabilenNormalUser okuyabilen = SadeceOkuyabilenNormalUser();
   okuyabilen.grisyap();
   okuyabilen.adinisoyle();
+  
   User use2 = AdminUser(); //upcanting yukarı çevirim
   User normall1 = NormalUser(); //user 2 yi admin usere atadı
   normall1.grisyap();

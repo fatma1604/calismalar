@@ -1,6 +1,6 @@
 //çalışan sınıfı
 void main(List<String> args) {
-  Kisi fatma = Kisi("emre", 22, "esşkişehir");
+  Kisi fatma = Kisi("fatma", 22, "esşkişehir");
   fatma.KendiniTanit();
 
   Calisan ugur = Calisan("ugue", 21, "kastomonu", 2000);
