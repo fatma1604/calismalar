@@ -26,6 +26,9 @@ main(List<String> args) {
   Matematik.sinifAdiniSoyle();
 
   print("Toplam işlem sayısı ${Matematik.toplamIslemSayisi}");
+
+
+
 }
 
 class Matematik {
@@ -35,7 +38,8 @@ class Matematik {
 
   static int toplamIslemSayisi = 0;
 //statdik alan içinde normal m yani çağramasın
-  //class variable, sınıf değişkeni
+  //stadik sınıfın bir geğişkenni haline geliyo
+
   static double PI = 3.14;
   static void sinifAdiniSoyle() {
     print("Ben matematik sınıfıyım");
