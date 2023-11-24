@@ -13,10 +13,11 @@ void main(List<String> args) {
 }
 
 abstract class VeriTabani {
+  int? bbdbb;
   void userSave();
   void userUpdate();
   void userDelete();
-  void urunguncele();//ekstradan koyduk   @override detlerini tanımladık
+  void urunguncele(); //ekstradan koyduk   @override detlerini tanımladık
   /* void bilgileriSoyle() {
     print("ben veri tabanındayım");
   }*/
@@ -42,7 +43,7 @@ class OracleDb extends VeriTabani {
   void userUpdate() {
     print("orecel dibiye kulanıcı güncelendi");
   }
-  
+
   @override
   void urunguncele() {
     // TODO: implement urunguncele
@@ -64,7 +65,7 @@ class FicebaseDb extends VeriTabani {
   void userUpdate() {
     print("FicebaseDb  dibiye kulanıcı güncelendi");
   }
-  
+
   @override
   void urunguncele() {
     // TODO: implement urunguncele

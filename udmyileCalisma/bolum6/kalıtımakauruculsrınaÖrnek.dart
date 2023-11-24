@@ -3,8 +3,8 @@ void main(List<String> args) {
   Kisi fatma = Kisi("fatma", 22, "esşkişehir");
   fatma.KendiniTanit();
 
-  Calisan ugur = Calisan("ugue", 21, "kastomonu", 2000);
-ugur        .kendiniTanit();
+  Calisan enes = Calisan("enes", 21, "kastomonu", 2000);
+     enes .kendiniTanit();
 }
 
 class Kisi {
