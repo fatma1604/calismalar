@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-//contionir kapsayan mufaza eden
-//kutunun 4 bir yanindan boşluk veermeeai  margin:EdgeInsets.all(16
-// margin:EdgeInsets.only(left=8,top=5)
-// margin:EdgeInsets.symmtrric(vertical=dikeyekseende,horizontal=yatay eksende)
-//margin:EdgeInsets.all(16),
 
 void main() {
   runApp(MyApp());
@@ -20,18 +15,24 @@ class MyApp extends StatelessWidget {
           title: Text("app bar"),
         ),
         body: Container(
-          alignment: Alignment.topCenter,
-          //width: 200,
-          // height: 300,
+          //algiment kontanirin içinde
+          // alignment: Alignment.bottomCenter, bu en alta ortalıyor
+          //alignment: Alignment.bottomLeft, bu en alta sol
+          // alignment: Alignment.bottomRight, bu sağ
+          //alignment: Alignment.centerLeft,ortada sol
+          //alignment: Alignment.topCenter, //tam yukardan ortalıyor
+
+          width: 200,
+          height: 300,
           color: Colors.blue,
           child: Text(
-            "fatma" * 2,
-            textAlign: TextAlign.center,
+            "fatma", //* 2, //2 katı yazıyor
+            //textAlign: TextAlign.center,//texti ortalıyor
+            // textAlign: TextAlign.end, yukardan en sağ
+            // textAlign: TextAlign.justify,yukardan en sola TAM YASLAMA
+            //textAlign: TextAlign.left,// SOLA YASLIYOR,
+            // textAlign: TextAlign.start,
           ),
-          margin: EdgeInsets.fromLTRB(10, 11, 12, 10),
-          constraints: BoxConstraints(
-              minHeight: 100, minWidth: 100, maxHeight: 200, maxWidth: 200),
-          padding: EdgeInsets.all(16),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {

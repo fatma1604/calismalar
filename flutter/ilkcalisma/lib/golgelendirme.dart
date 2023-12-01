@@ -17,19 +17,27 @@ class MyApp extends StatelessWidget {
         body: Center(
             child: Container(
           padding: EdgeInsets.all(25),
-          child: FlutterLogo(
-            size: 125,
+          child: Text(
+            "Fatma Nur Kamış",
+            style: TextStyle(fontSize: 30),
           ),
           decoration: BoxDecoration(
               color: Colors.pink,
-              shape: BoxShape.rectangle, //bu benden bütün köşleri bekliyor
-              border: Border.all(width: 10, color: Colors.blue),
-              borderRadius: BorderRadius.circular(40) //tüm kenarlar
-              //only de tahmin ede bilcen gibi istedin yerden bootomlef
-              //toplef gibi
-              //yuvarla şekli shape: BoxShape.circle
-
+              shape: BoxShape.rectangle,
+              border: Border.all(width: 4, color: Colors.blue),
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                topLeft: Radius.circular(25),
               ),
+              boxShadow: [
+                //gölgelendirme
+                BoxShadow(
+                    color: Colors.green, offset: Offset(0, 20), blurRadius: 20),
+                BoxShadow(
+                    color: Colors.yellow,
+                    offset: Offset(0, -90),
+                    blurRadius: 10),
+              ]),
         )),
         floatingActionButton: FloatingActionButton(
           onPressed: () {

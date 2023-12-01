@@ -40,25 +40,18 @@ class MyApp extends StatelessWidget {
         style: TextStyle(fontSize: 30),
       ),
       decoration: BoxDecoration(
-          color: Colors.pink,
-          shape: BoxShape.rectangle,
-          border: Border.all(width: 4, color: Colors.blue),
-          borderRadius: BorderRadius.only(
-            bottomLeft: Radius.circular(25),
-            topLeft: Radius.circular(25),
-          ),
-          image: DecorationImage(
-            image: NetworkImage(_image),
-            fit: BoxFit.cover,
-          ), //kutunun boyutu kadar kapsıyor
-
-          boxShadow: [
-            //gölgelendirme
-            BoxShadow(
-                color: Colors.green, offset: Offset(0, 20), blurRadius: 20),
-            BoxShadow(
-                color: Colors.yellow, offset: Offset(0, -90), blurRadius: 10),
-          ]),
+        color: Colors.pink,
+        shape: BoxShape.rectangle,
+        border: Border.all(width: 4, color: Colors.blue),
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(25),
+          topLeft: Radius.circular(25),
+        ),
+        image: DecorationImage(
+          image: NetworkImage(_image),
+          fit: BoxFit.cover,
+        ), //kutunun boyutu kadar kapsıyor
+      ),
     ));
   }
 }

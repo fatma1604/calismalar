@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-// mainAxisAlignment: MainAxisAlignment.center,orrttaalar
-//MainAxisAlignment.startMainAxisAlignment.start saağ yaslar
-//  MainAxisAlignment.spaceBetween, ortaddKİ  İKİSSİN ARRASSSINI AÇIYORR
 void main() {
   runApp(MyApp());
 }
@@ -24,10 +21,20 @@ class MyApp extends StatelessWidget {
           color: Colors.grey,
           height: 300,
           child: Row(
-            mainAxisSize: MainAxisSize.max, //içereeğim max
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            //eelamaanların  aarrraasını aç
-            crossAxisAlignment: CrossAxisAlignment.center, //x  eekssenindde
+            //ilgili satır Y EKSENİ
+            mainAxisSize: MainAxisSize.max, //içereeğim max veya min
+            //mainAxisAlignment:MainAxisAlignment.center,// elemanları ortalar
+            //mainAxisAlignment: MainAxisAlignment.end,//sola yatırdı
+            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            //mainAxisAlignment: MainAxisAlignment.spaceBetween,//ikisini sada ceker ortadakileri ararlar
+            //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            //mainAxisAlignment: MainAxisAlignment.start,//SOLA YASLAR
+
+            //crossAxisAlignment: CrossAxisAlignment.center, //x  eekssenindde
+            // crossAxisAlignment: CrossAxisAlignment.end,// AŞAYA
+            // crossAxisAlignment: CrossAxisAlignment.start,//YUKARI
+            // crossAxisAlignment: CrossAxisAlignment.stretch,ORTADA
+            crossAxisAlignment: CrossAxisAlignment.baseline,
             children: [
               Icon(Icons.cabin, size: (64), color: Colors.cyan),
               Icon(Icons.cached_outlined, size: (64), color: Colors.amber),

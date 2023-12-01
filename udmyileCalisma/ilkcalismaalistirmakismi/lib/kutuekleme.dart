@@ -10,157 +10,171 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Fulatır Dersleri"),
-          backgroundColor: Colors.deepPurple,
+          title: Text("app bar"),
         ),
-        body: Column(
+        body: Row(
           children: [
-            // D A R T sırasıyla yukarıda
-            Row(
-              children: [
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.purpleAccent,
-                  child: Center(
-                    child: Text(
-                      "D",
-                      style: TextStyle(color: Colors.black12),
-                    ),
+            Flexible(
+              child: Container(
+                width: 55,
+                height: 55,
+                color: Colors.red,
+                child: Center(
+                  child: Text(
+                    "D",
+                    style: TextStyle(fontSize: 25),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.purpleAccent,
-                  child: Center(
-                    child: Text(
-                      "A",
-                      style: TextStyle(color: Colors.black12),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.purpleAccent,
-                  child: Center(
-                    child: Text(
-                      "R",
-                      style: TextStyle(color: Colors.black12),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.purpleAccent,
-                  child: Center(
-                    child: Text(
-                      "T",
-                      style: TextStyle(color: Colors.black12),
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
-
-            // Boşluk ekleyebilirsiniz
-
-            // DERSLERİ sırasıyla aşağıda
+            Flexible(
+              child: Container(
+                margin: EdgeInsets.all(5),
+                width: 55,
+                height: 55,
+                color: Colors.red,
+                child: Center(
+                  child: Text(
+                    "A",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+            ),
+            Flexible(
+              child: Container(
+                margin: EdgeInsets.all(5),
+                width: 55,
+                height: 55,
+                color: Colors.red,
+                child: Center(
+                  child: Text(
+                    "R",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+            ),
+            Flexible(
+              child: Container(
+                margin: EdgeInsets.all(5),
+                width: 55,
+                height: 55,
+                color: Colors.red,
+                child: Center(
+                  child: Text(
+                    "T",
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ),
+              ),
+            ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "D",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "D",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "E",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "E",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "R",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "S",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "S",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "L",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "L",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "E",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "E",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "R",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
-                    ),
-                  ),
-                ),
-                Container(
-                  width: 55,
-                  height: 55,
-                  color: Colors.pinkAccent,
-                  child: Center(
-                    child: Text(
-                      "İ",
-                      style: TextStyle(color: Colors.black, fontSize: 25),
+                Flexible(
+                  child: Container(
+                    alignment: Alignment.bottomLeft,
+                    margin: EdgeInsets.all(5),
+                    width: 55,
+                    height: 55,
+                    color: Colors.red,
+                    child: Center(
+                      child: Text(
+                        "R",
+                        style: TextStyle(fontSize: 25),
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            debugPrint('Butona tıklandı');
+          },
+          child: Icon(
+            Icons.account_circle_rounded,
+            color: const Color.fromARGB(255, 59, 255, 137),
+          ),
+          backgroundColor: Colors.red,
         ),
       ),
     );
