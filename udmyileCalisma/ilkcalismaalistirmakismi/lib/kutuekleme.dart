@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
               children: [
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,
@@ -89,7 +89,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,
@@ -104,7 +104,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,
@@ -119,7 +119,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,
@@ -134,7 +134,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,
@@ -149,7 +149,7 @@ class MyApp extends StatelessWidget {
                 ),
                 Flexible(
                   child: Container(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     margin: EdgeInsets.all(5),
                     width: 55,
                     height: 55,

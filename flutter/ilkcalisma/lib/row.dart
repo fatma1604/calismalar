@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             mainAxisSize: MainAxisSize.max, //içereeğim max veya min
             //mainAxisAlignment:MainAxisAlignment.center,// elemanları ortalar
             //mainAxisAlignment: MainAxisAlignment.end,//sola yatırdı
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+           mainAxisAlignment: MainAxisAlignment.spaceAround,
             //mainAxisAlignment: MainAxisAlignment.spaceBetween,//ikisini sada ceker ortadakileri ararlar
             //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             //mainAxisAlignment: MainAxisAlignment.start,//SOLA YASLAR
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
             // crossAxisAlignment: CrossAxisAlignment.end,// AŞAYA
             // crossAxisAlignment: CrossAxisAlignment.start,//YUKARI
             // crossAxisAlignment: CrossAxisAlignment.stretch,ORTADA
-            crossAxisAlignment: CrossAxisAlignment.baseline,
+           
             children: [
               Icon(Icons.cabin, size: (64), color: Colors.cyan),
               Icon(Icons.cached_outlined, size: (64), color: Colors.amber),
