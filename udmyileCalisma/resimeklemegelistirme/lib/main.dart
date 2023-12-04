@@ -13,15 +13,7 @@ class MyApp extends StatelessWidget {
           title: Text("Resim çalışması "),
         ),
         body: Center(
-          child: Container(
-            width: 250,
-            height: 250,
-            decoration: BoxDecoration(
-              color: Colors.blue,
-              shape: BoxShape.circle,
-            ),
-            child: Image.asset('assets/resimler/logo.png'),
-          ),
+          child: Image.asset('assets/resimler/logo.png'),
         ),
       ),
     );
