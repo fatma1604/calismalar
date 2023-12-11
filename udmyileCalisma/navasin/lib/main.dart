@@ -46,7 +46,7 @@ class AnaSayfa extends StatelessWidget {
               //BU KOD BANAN HATA VERİCEK ÇÜNKÜ BELİ BİŞEYİN İÇİNDE DEĞİL TAMM ANLMADIM
             },
             style: ElevatedButton.styleFrom(primary: Colors.red.shade300),
-            child: Text("kırmızı sayfa ANDİYİT"),
+            child: Text("kırmızı sayfa android "),
           )
         ],
       ),
