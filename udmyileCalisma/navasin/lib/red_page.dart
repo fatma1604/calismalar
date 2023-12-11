@@ -6,15 +6,10 @@ class RedPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text(
-          "RED PAGE",
-          style: TextStyle(color: Colors.red),
-        ),
-      ),
-      appBar: AppBar(
-        title: Text("RED PAGE"),
-      ),
+    appBar: AppBar(title: Text("red page"),backgroundColor: Colors.red,
+    ),
+    body: Center(child: Text("red page ",style: TextStyle(color:Colors.red),),),
+    
     );
   }
 }
