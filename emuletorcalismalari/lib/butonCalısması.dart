@@ -46,7 +46,7 @@ class _YaziGetirme extends State<YaziGetirme> {
                 child: const Text("oyuna Başla"),
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Color.fromARGB(255, 215, 243, 33),
-                    foregroundColor: Colors.black),
+                     
               )
             ],
           ),
