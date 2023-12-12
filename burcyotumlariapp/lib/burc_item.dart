@@ -1,11 +1,14 @@
+import 'package:burcyotumlariapp/burcDetay.dart';
+import 'package:burcyotumlariapp/model/burclar.dart';
 import 'package:flutter/material.dart';
 
 class BurcItem extends StatelessWidget {
-  const BurcItem({Key? key}) : super(key: key);
+  final Burc listenelenBurc;
+  const BurcItem({required this.listenelenBurc, Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var myTextStyle = Theme.of(context).textTheme;
+    var myTextStyle = Theme.of(context).textTheme;//tek bir yerde stayla ilemei yapaya biliyoruz
     return Padding(
       padding: const EdgeInsets.all(4),
       child: Card(
@@ -16,19 +19,19 @@ class BurcItem extends StatelessWidget {
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => BurcDetay(secilenBurc: listelenenBurc),
+                  builder: (context) => BurcDetay(secilenBurc: listenelenBurc),
                 ),
               );
             },
             leading: Image.asset(
-              "images/" + listelenenBurc.burcKucukResim,
+              "images/" + listenelenBurc.kucukresim,
             ),
             title: Text(
-              listelenenBurc.burcAdi,
+              listenelenBurc.burcAdi,
               style: myTextStyle.headline5,
             ),
             subtitle: Text(
-              listelenenBurc.burcTarihi,
+              listenelenBurc.burcTarihi,
               style: myTextStyle.subtitle1,
             ),
             trailing: Icon(

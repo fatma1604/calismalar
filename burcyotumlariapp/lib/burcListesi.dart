@@ -1,4 +1,6 @@
+import 'package:burcyotumlariapp/burc_item.dart';
 import 'package:burcyotumlariapp/model/burclar.dart';
+import 'package:burcyotumlariapp/model/data/data.dart';
 import 'package:flutter/material.dart';
 
 class BurcListesi extends StatelessWidget {
@@ -17,7 +19,7 @@ class BurcListesi extends StatelessWidget {
       body: Center(
         child: ListView.builder(
           itemBuilder: (context, index) {
-            return BurcItem(listelenenBurc: tumBurclar[index]);
+            return BurcItem(listenelenBurc: tumBurclar[index]);
           },
           itemCount: tumBurclar.length,
         ),
@@ -29,18 +31,18 @@ class BurcListesi extends StatelessWidget {
     List<Burc> gecici = [];
 
     for (int i = 0; i < 12; i++) {
-      var burcAdi = Strings.Burc_Adlari[i];
-      var burcTahrih = Strings.Burc_Tarihleri[i];
-      var burcDetay = Strings.Burc_GenelOzelikleri[i];
+      var burAdi = Data.BURC_ADLARI[i];
+      var burcTrarih = Data.BURC_TARIHLERI[i];
+      var burcDetayi = Data.BURC_GENEL_OZELLIKLERI[i];
+      //resimler kücükük harfle koc veya boga yazıldı için
+      //toLowerCase kulandık resöimn adresini vermiş olduk
 
-      var burcKucukResim =
-          Strings.BURC_ADLARI[i].toLowerCase() + '${i + 1}.png';
-      //koc_buyuk1.png
-      var burcBuyukResim =
-          Strings.BURC_ADLARI[i].toLowerCase() + '_buyuk' + '${i + 1}.png';
+      var burcKucukResim = Data.BURC_ADLARI[i].toLowerCase() + '${i + 1}.png';
+      var buyukResim =
+          Data.BURC_ADLARI[i].toLowerCase() + '_buyuk' + '${i + 1}.png';
+
       Burc eklenecekBurc =
-          Burc(burcAdi, burcTahrih, burcDetay, burcKucukResim, burcBuyukResim);
-      gecici.add(eklenecekBurc);
+          Burc(burAdi, burcTrarih, burcDetayi, burcKucukResim, buyukResim);
     }
     return gecici;
   }
