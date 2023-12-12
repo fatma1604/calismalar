@@ -18,11 +18,13 @@ class MyApp extends StatelessWidget {
         '/': (context) => RedPage(),
 //bu şekilde sayfları yaza bilirim
       }, //map yapısıı
-      onUnknownRoute: ((settings) => MaterialPageRoute(
+      onUnknownRoute: ((settings) => MaterialPageRoute(//OLMAYAN ROTAYA EROR SAYFASI VERME
           builder: (context) => Scaffold(
                 appBar: AppBar(
                   title: Text("EROR"),
+                  
                 ),
+                body: Center(child: Text("404")),
               ))),
     );
   }
