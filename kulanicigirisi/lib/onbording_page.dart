@@ -44,9 +44,13 @@ class _OnbordingPageState extends State<OnbordingPage> {
                   },
                   child: Text("sikip"),
                 ),
-                SmoothPageIndicator(controller: _controller, count: 3),
+                SmoothPageIndicator(
+                    controller: _controller,
+                    count: 3), //sayfalar arasında yumşak bir geçiş//noktalar
                 onLastPage
                     ? GestureDetector(
+                        // kullanıcıların cihaz ekranı ile
+                        //etkileşimde bulunmasını sağlar ve çeşitli jestlere (dokunma, kaydırma, uzun basma, vb.) tepki verebilir.
                         onTap: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) {

@@ -23,25 +23,24 @@ import 'dart:io';
 import 'dart:math';
 
 void main(List<String> args) {
-    int total = 0;
+  int total = 0;
   print("değer gir");
 
-  String? number= stdin.readLineSync();
+  String? number = stdin.readLineSync();
 
-   int temporaryNumber = int.parse(number!);
-   int originalNumber  = temporaryNumber;
-  int digitCount= number.toString().length;
+  int temporaryNumber = int.parse(number!);
+  int originalNumber = temporaryNumber;
+  int digitCount = number.toString().length;
 
-  while (temporaryNumber> 0) {
-    int digit= temporaryNumber% 10;
-    
-   total += pow(digit, digitCount).toInt();
-    temporaryNumber~/= 10;
+  while (temporaryNumber > 0) {
+    int digit = temporaryNumber % 10;
+
+    total += pow(digit, digitCount).toInt();
+    temporaryNumber ~/= 10;
   }
-  if (total ==originalNumber ) {
+  if (total == originalNumber) {
     print("girdiniz sayı kuraLARA UYGUN $temporaryNumber");
+  } else {
+    print("Girdiğiniz sayı Armstrong sayısı değildir.");
   }
- else{
- print("Girdiğiniz sayı Armstrong sayısı değildir.");
- }
 }

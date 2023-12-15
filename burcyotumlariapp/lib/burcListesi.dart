@@ -1,6 +1,6 @@
 import 'package:burcyotumlariapp/burc_item.dart';
 import 'package:burcyotumlariapp/model/burclar.dart';
-import 'package:burcyotumlariapp/model/data/data.dart';
+import 'package:burcyotumlariapp/data/data.dart';
 import 'package:flutter/material.dart';
 
 class BurcListesi extends StatelessWidget {
