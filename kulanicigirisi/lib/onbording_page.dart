@@ -42,7 +42,7 @@ class _OnbordingPageState extends State<OnbordingPage> {
                   onTap: () {
                     _controller.jumpToPage(2);
                   },
-                  child: Text("sikip"),
+                  child: Text("skip"),
                 ),
                 SmoothPageIndicator(
                     controller: _controller,
