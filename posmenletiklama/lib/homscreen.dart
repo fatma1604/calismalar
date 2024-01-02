@@ -28,19 +28,19 @@ class _HomscreenState extends State<Homscreen> {
       body: ListView.builder(
         itemCount: productList.length,
         itemBuilder: (context, index) => Gorunum(
-          imUrl: productList[index]["thumbnail"],
-          prince: productList[index]["price"],
+          title: productList[index]["title"],
+          id: productList[index]["id"],
         ),
       ),
     );
   }
 
   void getProducts() async {
-    Uri ur1 = Uri.http("dummyjson.com", "carts");
+    Uri ur1 = Uri.http("dummyjson.com", "posts");
     final response = await http.get(ur1);
     final dataAsJson = json.decode(response.body);
     setState(() {
-      productList = dataAsJson["products"];
+      productList = dataAsJson["posts"];
     });
     print(response);
   }

@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Gorunum extends StatelessWidget {
-  const Gorunum({Key? key, required this.imUrl, required this.prince})
+  const Gorunum({Key? key, required this.id, required this.title})
       : super(key: key);
-  final String imUrl;
-  final String prince;
+  final String title;
+  final int id;
 
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [Image.network(imUrl), Text(prince)],
+      children: [Text(title), Text(id.toString())],
     );
   }
 }
