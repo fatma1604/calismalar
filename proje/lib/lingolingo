@@ -1,0 +1,20 @@
+Card(
+  child: Container(
+    padding: EdgeInsets.all(16),
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(8),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.grey.withOpacity(0.5),
+          spreadRadius: 5,
+          blurRadius: 7,
+          offset: Offset(0, 3),
+        ),
+      ],
+    ),
+    child: TextField(
+      controller: _kullaniciAdiController,
+      decoration: InputDecoration(labelText: "Kullanıcı Adı"),
+    ),
+  ),
+)
