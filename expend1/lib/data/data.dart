@@ -2,7 +2,7 @@ import 'package:expend1/model/model.dart';
 import 'package:flutter/services.dart';
 
 class ExpenseData {
-  List<Expense> expense = [
+  List<Expense> expenses = [
     Expense(name: "Kargo", price: 55, date: DateTime.now()),
     Expense(name: "Akşam yemeği", price: 360, date: DateTime.now()),
     Expense(name: "Benzin", price: 50, date: DateTime.now()),

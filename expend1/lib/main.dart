@@ -1,3 +1,4 @@
+import 'package:expend1/data/data.dart';
 import 'package:expend1/expens_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,14 +17,15 @@ void main() {
           backgroundColor: Colors.grey[400],
           actions: [
             IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.add,
-                  size: 34,
-                ))
+              onPressed: () {},
+              icon: const Icon(
+                Icons.add,
+                size: 34,
+              ),
+            ),
           ],
         ),
-        body: ExpensPage(),
+        body: ExpensPage(expenseData: ExpenseData()),
       ),
     ),
   );
