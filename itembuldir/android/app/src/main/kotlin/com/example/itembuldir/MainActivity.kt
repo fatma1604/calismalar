@@ -1,0 +1,6 @@
+package com.example.itembuldir
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
